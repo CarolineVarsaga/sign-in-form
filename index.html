@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <link rel="stylesheet" href="style.css">
+        <title>Sign in</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <p>Logotyp</p>
+            </div>
+
+            <div class="form-container">
+                <h1 class="rubrik">Skapa konto</h1>
+                <p class="underrubrik">Har du redan ett konto? <a href="#">Logga in</a></p>
+                <form onsubmit="alert('Bekräftelse - du har nu skapat ett konto')">
+                    <label>
+                        <span>Mejl</span>
+                        <input type="email" placeholder="exempel@mail.se" required>
+                    </label>
+                    <label>
+                        <span>Förnamn</span>
+                        <input type="text" placeholder="Förnamn" required>
+                    </label>
+                    <label>
+                        <span>Efternamn</span>
+                        <input type="text" placeholder="Efternamn" required>
+                    </label>
+
+                    <label>
+                        <span>Lösenord</span>
+                        <input type="password" placeholder="" req4>
+                    </label>      
+                    <label>
+                        <h6 class="birth">Födelsedatum</h6>
+                        <span>Månad</span>
+                        <select>
+                            <option value="option0" disabled selected>Välj...</option>
+                            <option value="jan">Januari</option>
+                            <option value="feb">Februari</option>
+                            <option value="mar">Mars</option>
+                            <option value="apr">April</option>
+                            <option value="maj">Maj</option>
+                            <option value="jun">Juni</option>
+                            <option value="jul">Juli</option>
+                            <option value="aug">Augusti</option>
+                            <option value="sep">September</option>
+                            <option value="okt">Oktober</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+                        
+                    </label>                         
+                    <label>
+                        <span>Dag</span>
+                        <input type="number" min="1" max="31" required>
+                    </label>
+                    <label>
+                        <span>År</span>
+                        <input type="number" min="1900" max="2015" required>
+                    </label>
+                    <button type="submit">Skapa konto</button>
+                </form>
+            </div>
+
+            <p class="consents">Genom att skapa ett konto godkänner och accepterar du <a href="#">Villkoren</a> och vår <a href="#">Integritetspolicy</a>, samt intygar att de uppgifter du lämnar är korrekta. </p>
+        </div>
+    </body>
+</html>
