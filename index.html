@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat&display=swap" rel="stylesheet">
         <title>Sign in</title>
     </head>
     <body>
@@ -15,26 +18,29 @@
             <div class="form-container">
                 <h1 class="rubrik">Skapa konto</h1>
                 <p class="underrubrik">Har du redan ett konto? <a href="#">Logga in</a></p>
+                
                 <form onsubmit="alert('Bekräftelse - du har nu skapat ett konto')">
                     <label>
                         <span>Mejl</span>
-                        <input type="email" placeholder="exempel@mail.se" required>
+                        <input type="email" required>
+                       
                     </label>
+                    <div class="name">
                     <label>
                         <span>Förnamn</span>
-                        <input type="text" placeholder="Förnamn" required>
+                        <input type="text" required>
                     </label>
                     <label>
                         <span>Efternamn</span>
-                        <input type="text" placeholder="Efternamn" required>
+                        <input type="text" required>
                     </label>
-
+                    </div>
                     <label>
                         <span>Lösenord</span>
-                        <input type="password" placeholder="" req4>
+                        <input type="password" required>
                     </label>      
+                    <h6 class="birth">Födelsedatum</h6>
                     <label>
-                        <h6 class="birth">Födelsedatum</h6>
                         <span>Månad</span>
                         <select>
                             <option value="option0" disabled selected>Välj...</option>
@@ -61,11 +67,14 @@
                         <span>År</span>
                         <input type="number" min="1900" max="2015" required>
                     </label>
+                    <p class="consents">
+                        Genom att skapa ett konto accepterar och godkänner du <a href="#">Villkor</a> och <a href="#">Integritetspolicy</a>.
+                    </p>
                     <button type="submit">Skapa konto</button>
                 </form>
             </div>
 
-            <p class="consents">Genom att skapa ett konto godkänner och accepterar du <a href="#">Villkoren</a> och vår <a href="#">Integritetspolicy</a>, samt intygar att de uppgifter du lämnar är korrekta. </p>
+            
         </div>
     </body>
 </html>
